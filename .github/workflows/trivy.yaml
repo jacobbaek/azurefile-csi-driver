@@ -35,4 +35,6 @@ jobs:
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH,MEDIUM,LOW,UNKNOWN'
+          # ignore azcopy scan due to https://github.com/Azure/azure-storage-azcopy/issues/2408
+          trivyignores: 'usr/local/bin/azcopy'
 
